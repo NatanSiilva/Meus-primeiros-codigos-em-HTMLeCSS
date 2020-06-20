@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Suane Tossi</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="_css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+</head>
+<body>
+
+<!== // cabecalho-->
+
+<header id="cabecalho">
+
+    <hgroup>
+        <h1>Corretora Suane Tossi</h1>
+        <h2>Fazendo a tua Corretagem !</h2>
+    </hgroup>
+    <img id="icone" src="_imagens/log1.gif" >
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Seja Bem Vindo</li>
+            <li><a href="quemsou.html">Apartamentos</li>
+            <li><a href="contato.html">Contato</li>
+        </ul>
+    </nav>
+</header>
+
+<!== // CONTEUDO-->
+
+<main id="conteudo">
+    <form method="post" id="fcontato" action="mailto:natan.jhs6991@gamail.com" oninput="calc-total();">
+
+        <fieldset id="usuario"><legend>Indentificação do usuario</legend>
+            <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+            <p><label for="csenha">Senha:</label><input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+            <p><label for="cemail">E-mail:</label><input type="email" name="temail" id="cemail" size="" maxlength="" placeholder="Digite o Emal"/></p>
+            <fieldset id="sexo"><legend>Sexo</legend>
+                <input type="radio" name="tsexo" id="csexo" checked/><label for="csexo">Masculino</label><br/>
+                <input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label>
+            </fieldset>
+            <p>Data de Nascemento:<input type="date" name="tdata" id="cdate"></p>
+        </fieldset>
+        <fieldset id="endereco"><legend>Enedreço do Usuário</legend>
+            <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua,Av, Trav,..."/></p>
+            <p><label for="cnum">Número:<label><input type="number" name="tnum" id="cnum" min="0" max="99999"/></p>
+            <p><label for="cest">Estado:</label>
+            <select name="test" id="cest">
+                <optgroup label="Região Sudeste">
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option value="Al" selected>Alagoas</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option>Rio Grande Do Sul</option>
+                    <option>Minas Gerais</option>
+                    <option>Stanta Catarina</option>
+                </optgroup>
+            </select></p>
+            <p><label for="ccid">Cidade:</label><input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+            <datalist id="cidades">
+                <option value="Maceió"></option>
+                <option value="Coruripe"></option>
+                <option value="São Miguel"></option>
+                <option value="Maragogi"></option>
+            </datalist>
+        </fieldset>
+        <fieldset id="menssagem"><legend>Menssagem do usuário</legend>
+            <p><label for="curg">Grau de Urgençia:</label>Min<input type="range" name="turg" id="curg" min="0" max="10" step="2"/>Max </p>
+            <p><label for="cmsg">Menssagem:</label><textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Deixe aqui a sua Mesnagem."></textarea></p>
+        </fieldset>
+        <input type="image" src="_imagens/botao-enviar.png"/>
+    </form>
+</main>
+<!== // RODAPÉ-->
+
+<footer id="rodape">
+    <p>Copyright &copy; 2020 - by Natanael da Silva</p><br/>
+    <a class="direita" href="http://facebook.com/Natanaeldasilva" target="_blank">Facebook</a>
+    <a class="direita" href="http://instagram.com/ntsiilva" target="_blank">Instagram</a>
+    <a class="whats" href="https://web.whatsapp.com/send?phone=+555184729531" target="_blank">
+    <i class="fa fa-whatsapp"></i>
+</footer>
+</body>
+</html>
